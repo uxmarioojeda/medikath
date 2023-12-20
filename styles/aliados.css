@@ -1,0 +1,40 @@
+.container_logos {
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #252525;
+    height: auto;
+    padding: 10px 0;
+
+}
+
+.img-logos {
+    margin: 15px;
+}
+
+.container_aliados {
+    background-color: #ffa900;
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .container_logos {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container_logos {
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #252525;
+        height: auto;
+        padding: 10px 0;
+
+    }
+}

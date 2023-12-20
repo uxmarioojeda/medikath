@@ -1,0 +1,52 @@
+.container_vision {
+    height: auto;
+}
+
+.cont_img_vision {
+    background-image: url(../images/iglesia.png);
+    background-repeat: no-repeat;
+    margin: 5% 0%;
+
+}
+
+.cont_text_vision {
+    padding: 5%;
+}
+
+h1,
+h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+
+    .cont_img_vision {
+        background-size: contain;
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cont_img_vision {
+        background-size: contain;
+        height: 768px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .cont_img_vision {
+        height: auto;
+        background-size: cover;
+        height: 800px;
+    }
+
+    .container_vision {
+        display: flex;
+    }
+
+    .cont_text_vision {
+        font-size: 12px;
+    }
+}
