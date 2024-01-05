@@ -1,55 +1,46 @@
-.contenedor_card {}
-
-.carousel_cards {}
+.container_corousel{
+    background-color: #3498db;
+}
 
 .card {
+    position: relative;
     background-color: #717171;
-    /* width: 25%; */
     padding: 10px;
-    /* display: row; */
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin: 10px;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin: 10px; /* Espacio entre las tarjetas */
+    overflow: hidden;
+}
 
+.card img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.cont_card {
+    margin-top: 10px;
+    height: 220px;
+    overflow: auto;
 }
 
 .container_corousel {
     height: auto;
 }
 
-.txt_service {
-    display: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+/* Resto de tus estilos ... */
 
-
-/* Cuando la pantalla es menor a 653 píxeles de ancho, ocultar todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que debería abrir y cerrar la barra de navegación en pantallas pequeñas (.icon) */
 @media screen and (max-width: 930px) {
-
     .card {
         height: auto;
     }
 }
 
-@media screen and (min-width: 930px) {
-
-    .card {
-        height: 400px;
-
-    }
-
-
-
-}
-
-@media and (min-width: 930px) {}
-
-/* La clase "responsive" se agrega a la barra de navegación superior con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que la barra de navegación se vea bien en pantallas pequeñas (mostrar los enlaces verticalmente en lugar de horizontalmente) */
 @media screen and (max-width: 600px) {
     .card {
-        height: 4100;
+        height: auto;
     }
 }

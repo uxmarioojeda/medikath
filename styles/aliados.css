@@ -1,5 +1,5 @@
 .container_logos {
-
+    
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -11,6 +11,7 @@
 
 .img-logos {
     margin: 15px;
+    width: 30%;
 }
 
 .container_aliados {
@@ -18,7 +19,7 @@
 
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
 
     .container_logos {
         display: flex;

@@ -1,0 +1,45 @@
+$background-image: url("../images/iglesia.png");
+$primary-color: #e73073c6;
+$secondary-color: #ffffff27;
+$border-color: #ffffffa4;
+
+// Mixin para estilos comunes de contenedores
+@mixin container-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+}
+
+body {
+  background-image: $background-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  .container {
+    @include container-styles;
+    background-color: $primary-color;
+
+    .form-control {
+      background-color: $secondary-color;
+      border-color: $border-color;
+      margin-top: 5px;
+    }
+  }
+
+  .main-content {
+    p {
+      color: white;
+    }
+  }
+
+  p {
+    color: white;
+  }
+}
