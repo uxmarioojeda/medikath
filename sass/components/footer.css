@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.cont_img_quienes {
+  background-image: url(../images/iglesia.png);
+  background-repeat: no-repeat;
+  margin: 5% 0%;
+  /* Agrega otros estilos según sea necesario */
+}
+
+.footer_1 p {
+  color: #fff;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.441em;
+}
+
+h2 {
+  font-size: 1.953em;
+}
+
+p {
+  font-size: 1.563em;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=footer.css.map */

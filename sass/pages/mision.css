@@ -1,0 +1,45 @@
+.container_mision {
+  height: 100vh;
+}
+
+.cont_img_mision {
+  background-image: url(.././../images/iglesia.png);
+  background-repeat: no-repeat;
+  margin: 5% 0%;
+}
+
+.cont_text_mision {
+  padding: 5%;
+}
+
+h1,
+h2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .cont_img_mision {
+    background-size: contain;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cont_img_mision {
+    background-size: contain;
+    height: 768px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .cont_img_mision {
+    height: auto;
+    background-size: cover;
+  }
+  .container_mision {
+    display: flex;
+  }
+  .cont_text_mision {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=mision.css.map */

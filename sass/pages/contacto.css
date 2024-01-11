@@ -1,0 +1,29 @@
+body {
+  background-image: url("../images/iglesia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+  background-color: rgba(231, 48, 115, 0.7764705882);
+}
+body .container .form-control {
+  background-color: rgba(255, 255, 255, 0.1529411765);
+  border-color: rgba(255, 255, 255, 0.6431372549);
+  margin-top: 5px;
+}
+body .main-content p {
+  color: white;
+}
+body p {
+  color: white;
+}/*# sourceMappingURL=contacto.css.map */

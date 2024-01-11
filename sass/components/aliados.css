@@ -1,0 +1,33 @@
+.container_logos {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #252525;
+  height: auto;
+  padding: 10px 0;
+}
+.container_logos h3 {
+  color: #fff;
+}
+.container_logos .img-logos {
+  margin: 15px;
+  width: 30%;
+}
+@media screen and (min-width: 700px) {
+  .container_logos {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container_logos {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+.container_aliados {
+  background-color: #ffa900;
+}/*# sourceMappingURL=aliados.css.map */

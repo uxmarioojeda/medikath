@@ -1,16 +1,15 @@
-.container_vision {
-    height: auto;
+.container_mision {
+    height: 100vh;
 }
 
-.cont_img_vision {
-    background-image: url(../images/iglesia.png);
+.cont_img_mision {
+    background-image: url(.././../images/iglesia.png);
     background-repeat: no-repeat;
     margin: 5% 0%;
-    background-color: aqua;
 
 }
 
-.cont_text_vision {
+.cont_text_mision {
     padding: 5%;
 }
 
@@ -23,31 +22,30 @@ h2 {
 
 @media screen and (max-width: 500px) {
 
-    .cont_img_vision {
+    .cont_img_mision {
         background-size: contain;
         height: 320px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .cont_img_vision {
+    .cont_img_mision {
         background-size: contain;
         height: 768px;
     }
 }
 
 @media screen and (min-width: 1023px) {
-    .cont_img_vision {
+    .cont_img_mision {
         height: auto;
         background-size: cover;
-        height: 800px;
     }
 
-    .container_vision {
+    .container_mision {
         display: flex;
     }
 
-    .cont_text_vision {
+    .cont_text_mision {
         font-size: 12px;
     }
 }

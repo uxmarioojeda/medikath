@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Estilos base */
+h1,
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #252525;
+}
+
+.footer_1 p {
+  color: #fff;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.441em;
+}
+
+h2 {
+  font-size: 1.953em;
+}
+
+p {
+  font-size: 1.563em;
+}
+
+/* Media query para dispositivos móviles (ej. ancho máximo de 767px) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.8em;
+    /* Ajusta según sea necesario */
+  }
+  h2 {
+    font-size: 1.5em;
+    /* Ajusta según sea necesario */
+  }
+  p {
+    font-size: 1.2em;
+    /* Ajusta según sea necesario */
+  }
+}/*# sourceMappingURL=main.css.map */

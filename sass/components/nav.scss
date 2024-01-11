@@ -1,0 +1,172 @@
+/* Estilos para el Navbar */
+
+/* Cambiar el color de fondo del nav y añadir relleno al navbar */
+
+.navbar {
+    background-color: #3498db !important;
+  
+    /* Cambiar el color del fondo del navbar a tu preferencia */
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: right;
+  }
+  
+  /* Cambiar el color del texto en los enlaces del nav */
+  
+  .navbar-nav .nav-item, .nav-link {
+    color: #ffffff !important;
+  
+    /* Cambiar el color del texto de los enlaces en el navbar a tu preferencia */
+  }
+  
+  /* Estilos para el menú desplegable */
+  
+  .dropdown-menu {
+    background-color: #2980b9;
+  
+    /* Cambiar el color de fondo del menú desplegable */
+  
+    /* Añadir relleno al menú desplegable */
+  }
+  
+  .txt_service {
+    color: #252525;
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .txt_service_1 {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container_corousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2980b9;
+    height: 800px;
+    padding: 50px 0;
+  }
+  
+  /* Estilos para los elementos del menú desplegable */
+  
+  .dropdown-item {
+    color: #ffffff;
+  
+    /* Cambiar el color del texto de los elementos del menú desplegable */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilo para el enlace activo en la barra principal */
+  
+  .nav .active {
+    background-color: #007FCD;
+  
+    /* Cambiar el color de fondo del enlace activo en la barra principal */
+    color: white !important;
+  
+    /* Cambiar el color del texto del enlace activo en la barra principal */
+  }
+  
+  /* Estilos para la barra de navegación */
+  
+  #navbarNav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navbar-toggler {
+    background-color: #007FCD !important;
+    border: #3498db !important;
+  }
+  
+  .contenedor_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .card {
+    background-color: #ffffff75 !important;
+    color: #252525;
+  }
+  
+  .container_aliados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media Query para dispositivos móviles */
+  @media only screen and (min-width: 320px) {
+    /* Puedes ajustar estilos específicos para dispositivos móviles aquí */
+  
+    .navbar {
+      padding: 10px 10px;
+  
+      /* Añadir relleno al navbar */
+    }
+  }
+  
+  /* Media Query para tabletas en modo retrato */
+  @media only screen and (min-width: 480px) {
+    /* Puedes ajustar estilos específicos para tabletas en modo retrato aquí */
+  }
+  
+  /* Media Query para tabletas en modo retrato */
+  @media only screen and (min-width: 576px) {
+    /* Puedes ajustar estilos específicos para tabletas en modo retrato aquí */
+  }
+  
+  /* Media Query para tabletas en modo retrato */
+  @media only screen and (min-width: 768px) {
+    /* Puedes ajustar estilos específicos para tabletas en modo retrato aquí */
+  
+    .navbar {
+      padding: 10px 20px;
+  
+      /* Añadir relleno al navbar */
+    }
+  }
+  
+  /* Media Query para tabletas en modo retrato */
+  @media only screen and (min-width: 769px) {
+    /* Puedes ajustar estilos específicos para tabletas en modo retrato aquí */
+  
+    .navbar {
+      padding: 10px 20px;
+  
+      /* Añadir relleno al navbar */
+    }
+  }
+  
+  /* Media Query para tabletas en modo retrato */
+  @media only screen and (min-width: 1024px) {
+    /* Puedes ajustar estilos específicos para tabletas en modo retrato aquí */
+  
+    .navbar {
+      padding: 10px 80px;
+  
+      /* Añadir relleno al navbar */
+    }
+  }
+  
+  /* Media Query para tabletas en modo retrato */
+  @media only screen and (min-width: 1200px) {
+    /* Puedes ajustar estilos específicos para tabletas en modo retrato aquí */
+  }
+  

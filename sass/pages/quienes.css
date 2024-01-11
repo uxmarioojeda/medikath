@@ -1,0 +1,47 @@
+.container_quienes {
+  height: auto;
+}
+
+.cont_img_quienes {
+  background-image: url(.././../images/iglesia.png);
+  background-repeat: no-repeat;
+  margin: 5% 0%;
+}
+
+.cont_text_quienes {
+  padding: 5%;
+}
+
+h1,
+h2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #3498db;
+}
+
+@media screen and (max-width: 500px) {
+  .cont_img_quienes {
+    background-size: contain;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cont_img_quienes {
+    background-size: contain;
+    height: 768px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .cont_img_quienes {
+    height: auto;
+    width: 50%;
+    background-size: contain;
+  }
+  .container_quienes {
+    display: flex;
+  }
+  .cont_text_quienes {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=quienes.css.map */
