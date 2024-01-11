@@ -1,6 +1,6 @@
 // Variables
 $text-color: #ffffff;
-$background-color: #ffa900;
+$background-color: #f0aa1f;
 
 // Estilos para el contenedor de logos
 .container_logos {
@@ -17,10 +17,15 @@ $background-color: #ffa900;
     width: 30%;
   }
 
+  @media screen and (max-width: 768px) {
+    display: row;
+  }
+
   // Media Query para pantallas de 700px o más
   @media screen and (min-width: 700px) {
     display: flex;
   }
+  
 
   // Media Query para pantallas de 1440px o más
   @media screen and (min-width: 1440px) {

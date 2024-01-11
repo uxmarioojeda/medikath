@@ -1,20 +1,19 @@
 $primary-color: #3498db;
-
 .container_corousel{
     background-color: $primary-color;
+    
 }
-
 .card {
     position: relative;
     background-color: #717171;
     padding: 10px;
     text-align: center;
-    height: 400px; /* Ajusta la altura según tus necesidades */
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    margin: 10px; /* Espacio entre las tarjetas */
+    margin: 10px; 
     overflow: hidden;
 }
 
@@ -32,9 +31,6 @@ $primary-color: #3498db;
 .container_corousel {
     height: auto;
 }
-
-/* Resto de tus estilos ... */
-
 @media screen and (max-width: 930px) {
     .card {
         height: auto;

@@ -2,16 +2,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #252525;
+  color: #ffffff;
   height: auto;
   padding: 10px 0;
-}
-.container_logos h3 {
-  color: #fff;
 }
 .container_logos .img-logos {
   margin: 15px;
   width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .container_logos {
+    display: row;
+  }
 }
 @media screen and (min-width: 700px) {
   .container_logos {
@@ -29,5 +31,5 @@
 }
 
 .container_aliados {
-  background-color: #ffa900;
-}/*# sourceMappingURL=aliados.css.map */
+  background: rgb(240,170,31);
+  background: linear-gradient(0deg, rgba(240,170,31,1) 0%, rgba(255,170,0,1) 100%);}/*# sourceMappingURL=aliados.css.map */

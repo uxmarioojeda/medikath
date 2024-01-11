@@ -1,9 +1,7 @@
-@charset "UTF-8";
 .cont_img_quienes {
   background-image: url(../images/iglesia.png);
   background-repeat: no-repeat;
   margin: 5% 0%;
-  /* Agrega otros estilos según sea necesario */
 }
 
 .footer_1 p {
