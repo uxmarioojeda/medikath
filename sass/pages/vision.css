@@ -1,46 +1,39 @@
-.container_vision {
-  height: auto;
-}
-
 .cont_img_vision {
-  background-image: url(.././../images/iglesia.png);
+  background-image: url(.././../images/icono-veterinario.png);
   background-repeat: no-repeat;
-  margin: 5% 0%;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 5%;
 }
 
 .cont_text_vision {
   padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1,
-h2 {
-  align-items: center;
-  justify-content: center;
+h1, h2 {
   text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .cont_img_vision {
     background-size: contain;
-    height: 320px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .cont_img_vision {
-    background-size: contain;
-    height: 768px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .cont_img_vision {
-    height: auto;
-    background-size: cover;
-    height: 800px;
-  }
-  .container_vision {
-    display: flex;
+    height: 50vh;
   }
   .cont_text_vision {
-    font-size: 12px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .cont_img_vision {
+    background-size: cover;
+    height: auto;
+  }
+  .cont_text_vision {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=vision.css.map */
