@@ -1,43 +1,329 @@
-@charset "UTF-8";
-/* Estilos base */
-h1,
-h2 {
-  color: #fff;
+.navbar {
+  background-color: #3498db !important;
+  padding: 10px 20px;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav .nav-item, .navbar-link {
+  color: #ffffff !important;
+}
+.navbar-toggler {
+  background-color: #007FCD !important;
+  border: #3498db !important;
+}
+.navbar.active {
+  background-color: #007FCD;
+  color: white !important;
 }
 
-p {
+#navbarNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-logos {
+  padding-top: 10px;
+}
+
+.cont_text_quienes h1,
+.cont_text_quienes h2 {
+  color: #3498db;
+}
+
+.cont_text_vision h1,
+.cont_text_vision h2 {
+  color: #3498db;
+}
+
+.cont_text_vision {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cont_text_quienes {
+  display: block;
+  text-align: center;
+}
+
+.cont_img_quienes {
+  background-image: url(../images/iglesia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% 0%;
+  background-color: #252525;
+  height: 70vh;
+}
+
+.cont_img_vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../images/vision_p.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.txt_service {
   color: #252525;
+  height: auto;
+  padding: 10px 0;
 }
 
-.footer_1 p {
-  color: #fff;
-  font-size: 16px;
+.txt_service_1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-h1 {
-  font-size: 2.441em;
+.container_corousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  height: auto;
+  padding: 10px;
 }
-
-h2 {
-  font-size: 1.953em;
+.container_corousel .card {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.418);
+  padding: 10px;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  margin: 10px;
+  overflow: hidden;
 }
-
-p {
-  font-size: 1.563em;
+.container_corousel .card img {
+  width: 100%;
+  max-width: 250px;
 }
-
-/* Media query para dispositivos móviles (ej. ancho máximo de 767px) */
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: 1.8em;
-    /* Ajusta según sea necesario */
+.container_corousel .card .cont_card {
+  margin-top: 10px;
+  height: 220px;
+  overflow: auto;
+}
+@media screen and (max-width: 930px), (max-width: 600px) {
+  .container_corousel .card .cont_card {
+    height: auto;
   }
-  h2 {
-    font-size: 1.5em;
-    /* Ajusta según sea necesario */
+}
+
+.container_aliados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0aa1f;
+}
+.container_aliados h2, .container_aliados h3 {
+  color: white;
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar {
+    padding: 10px 10px;
   }
-  p {
-    font-size: 1.2em;
-    /* Ajusta según sea necesario */
+  .cont_img_vision {
+    height: 70vh;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+}
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .cont_img_vision {
+    height: 100vh;
+    width: 100%;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 10px 80px;
+  }
+  .container_quienes {
+    display: flex;
+  }
+  .cont_text_quienes {
+    margin: 5%;
+  }
+  .cont_img_vision {
+    height: 64vh;
+    width: 100%;
+    margin: 10px;
+  }
+  body {
+    background-size: cover;
+  }
+}
+.container_mision {
+  display: row;
+  height: 100vh;
+}
+
+.cont_img_mision {
+  background-image: url(../images/icono-veterinario.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cont_text_mision {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.cont_text_mision h1, h2 {
+  color: #007FCD;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cont_img_mision {
+    background-size: contain;
+    height: 50vh;
+  }
+  .cont_text_mision {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .cont_img_mision {
+    background-size: cover;
+    height: auto;
+  }
+  .cont_text_mision {
+    font-size: 16px;
+  }
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.title_principal {
+  color: #ffa900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-blue {
+  font-size: 24px;
+  color: #3498db;
+  display: flex;
+  text-align: center;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+.body_contac {
+  background-image: url("../images/iglesia.png");
+  background-repeat: no-repeat;
+  display: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+.body_contac .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+  background-color: rgba(231, 48, 115, 0.7764705882);
+}
+.body_contac .container .form-control {
+  background-color: rgba(255, 255, 255, 0.1529411765);
+  border-color: rgba(255, 255, 255, 0.6431372549);
+  margin-top: 5px;
+}
+.body_contac .main-content p {
+  color: white;
+}
+.body_contac p {
+  color: white;
+}
+
+.cont_contac {
+  margin: 50px;
 }/*# sourceMappingURL=main.css.map */

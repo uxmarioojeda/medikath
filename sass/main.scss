@@ -1,44 +1,352 @@
-/* Estilos base */
-h1,
-h2 {
-    color: #fff;
+// Variables generales
+$primary-color: #3498db;
+$secondary-color: #2980b9;
+$nav-text-color: #ffffff;
+$corousel-bg-color: #2980b9;
+$corousel-text-color: #252525;
+$dropdown-text-color: #ffffff;
+$active-nav-bg-color: #007FCD;
+$active-nav-text-color: white;
+$toggler-bg-color: #007FCD;
+$toggler-border-color: #3498db;
+$card-bg-color: #ffffff75;
+$alidos-color: #f0aa1f;
+$background-image: url("../images/iglesia.png");
+$border-color: #ffffffa4;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-p {
-    color: #252525;
+// Estilos para la barra de navegación
+.navbar {
+  background-color: $primary-color !important;
+  padding: 10px 20px;
+
+  &-collapse {
+    @include flex-center;
+  }
+
+  &-nav .nav-item, &-link {
+    color: $nav-text-color !important;
+  }
+
+  &-toggler {
+    background-color: $toggler-bg-color !important;
+    border: $toggler-border-color !important;
+  }
+
+  &.active {
+    background-color: $active-nav-bg-color;
+    color: $active-nav-text-color !important;
+  }
 }
 
-.footer_1 p{
-    color: #fff;
-    font-size: 16px;
+#navbarNav {
+  @include flex-center;
+  text-align: center;
+}
+.container_mision {
+  display: row;
+  height: 100vh;
 }
 
-h1 {
-    font-size: 2.441em;
+.cont_img_mision {
+  background-image: url(.././../images/icono-veterinario.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-h2 {
-    font-size: 1.953em;
+.cont_text_mision {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
-p {
-    font-size: 1.563em;
+h1, h2 {
+  text-align: center;
 }
 
-/* Media query para dispositivos móviles (ej. ancho máximo de 767px) */
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: 1.8em;
-        /* Ajusta según sea necesario */
+@media screen and (max-width: 768px) {
+  .cont_img_mision {
+      background-size: contain;
+      height: 50vh;
+  }
+
+  .cont_text_mision {
+      font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .cont_img_mision {
+      background-size: cover;
+      height: auto;
+  }
+
+  .cont_text_mision {
+      font-size: 16px;
+  }
+}
+
+// Estilos para las imágenes de logos
+.img-logos {
+  padding-top: 10px;
+}
+
+.cont_text_quienes h1,
+.cont_text_quienes h2,
+.cont_text_vision h1,
+.cont_text_vision h2 {
+  color: $primary-color;
+}
+
+.cont_text_vision,
+.cont_text_quienes {
+  display: block;
+  text-align: center;
+}
+
+.cont_img_quienes,
+.cont_img_vision{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.cont_img_quienes {
+  background-image: url(../images/iglesia.png);
+  background-size: cover;
+  margin: 5% 0%;
+  background-color: #252525;
+  height: 70vh;
+}
+.cont_img_mision {
+  background-image: url(../images/iglesia.png);
+  background-size: cover;
+  margin: 5% 0%;
+  background-color: #252525;
+  height: 70vh;
+}
+
+.cont_img_vision {
+  background-image: url(../images/vision_p.jfif);
+  background-size: contain;
+}
+
+// Estilos para el texto de servicio
+.txt_service {
+  color: $corousel-text-color;
+  height: auto;
+  padding: 10px 0;
+}
+
+.txt_service_1 {
+  color: white;
+  @include flex-center;
+  text-align: center;
+}
+
+// Estilos para el contenedor del carrusel
+.container_corousel {
+  @include flex-center;
+  background-color: $primary-color;
+  height: auto;
+  padding: 10px;
+
+  .card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.418);
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      max-width: 250px;
     }
 
-    h2 {
-        font-size: 1.5em;
-        /* Ajusta según sea necesario */
-    }
+    .cont_card {
+      margin-top: 10px;
+      height: 220px;
+      overflow: auto;
 
+      @media screen and (max-width: 930px), (max-width: 600px) {
+        height: auto;
+      }
+    }
+  }
+}
+
+// Estilos para el contenedor de aliados
+.container_aliados {
+  @include flex-center;
+  text-align: center;
+  padding: 10px;
+  background-color: $alidos-color;
+
+  h2, h3 {
+    color: white;
+  }
+}
+
+// Media queries
+@media only screen and (min-width: 320px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .cont_img_vision {
+    height: 70vh;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .cont_img_vision {
+    height: 100vh;
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 10px 80px;
+  }
+
+  .container_quienes {
+    display: flex;
+    height: 70vh;
+  }
+
+  .cont_text_quienes {
+    margin: 5%;
+  }
+
+  .cont_img_vision {
+    height: 64vh;
+    width: 100%;
+    margin: 10px;
+  }
+
+  body {
+    background-size: cover;
+  }
+}h1, h2 {
+  text-align: center;
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.title_principal {
+  color: #ffa900;
+  @include flex-center;
+  text-align: center;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+
+  .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+      object-fit: cover;
+    }
+  }
+
+  &:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+}
+
+.title-blue {
+  font-size: 24px;
+  color: #3498db;
+  @include flex-center;
+  text-align: center;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
+}
+
+.body_contac {
+  background-image: $background-image;
+  background-repeat: no-repeat;
+  display: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+
+  .container {
+    @include container-styles;
+    background-color: $primary-color;
+
+    .form-control {
+      background-color: $secondary-color;
+      border-color: $border-color;
+      margin-top: 5px;
+    }
+  }
+
+  .main-content {
     p {
-        font-size: 1.2em;
-        /* Ajusta según sea necesario */
+      color: white;
     }
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.cont_contac {
+  margin: 50px;
 }
